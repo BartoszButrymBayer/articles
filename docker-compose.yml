@@ -1,0 +1,38 @@
+services:
+  db:
+    image: postgres
+    container_name: ArticlesAPI
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: ArticlesDb
+    ports:
+      - "5432:5432"
+    volumes:
+      - db:/var/lib/postgresql/data
+
+  backend:
+    build:
+      context: ./ArticlesApiPostgres
+      dockerfile: Dockerfile
+    container_name: ArticlesBackend
+    ports:
+      - "5081:80"
+    depends_on:
+      - db
+    environment:
+      ConnectionStrings__ArticlesDb: "Host=db;Database=ArticlesDb;Username=postgres;Password=postgres"
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: ArticlesFrontend
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+
+volumes:
+  db:
+    driver: local

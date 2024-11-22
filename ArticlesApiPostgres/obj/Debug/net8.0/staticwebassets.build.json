@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "u9NfUPP/xHh61d5OuDsJMHNG0T8F4OnAfQRxCNkJLTg=",
+  "Source": "ArticlesApiPostgres",
+  "BasePath": "_content/ArticlesApiPostgres",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

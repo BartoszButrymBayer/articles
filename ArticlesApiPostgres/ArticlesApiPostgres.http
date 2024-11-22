@@ -1,0 +1,6 @@
+@ArticlesApiPostgres_HostAddress = http://localhost:5081
+
+GET {{ArticlesApiPostgres_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

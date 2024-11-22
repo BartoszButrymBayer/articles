@@ -1,0 +1,50 @@
+.h2 {
+  margin-top: 40px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 640px;
+  margin-top: 30px;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  padding: 15px;
+  outline: none;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: rgb(232, 231, 227);
+}
+
+.form label {
+  display: block;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #666c72;
+  margin-bottom: 5px;
+}
+
+.form span {
+  color: crimson;
+}
+
+.submit {
+  width: 100%;
+  background-color: #3d866e;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 18px;
+  padding: 15px;
+  outline: none;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  cursor: pointer;
+}
